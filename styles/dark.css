@@ -9,7 +9,7 @@
   --hover-color:rgba(255, 0, 112, 0.4);
 }
 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
   :root {
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: rgb(0, 0, 40);
@@ -19,7 +19,7 @@
   --title-shadow-color: #ff0070;
   --hover-color: rgba(255, 0, 112, 0.4);
   }
-  .header__decorative-icon{
+  .header__decorative-icon {
     visibility: visible;
   }
 }

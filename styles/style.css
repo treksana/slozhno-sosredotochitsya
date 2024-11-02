@@ -96,18 +96,6 @@
   }
 }
 
-.theme_dark {
-  .decorated-zone::after {
-    border-top: 1px solid var(--accent-color, red);
-    border-right: 1px solid var(--accent-color, red);
-  }
-
-  .decorated-zone::before {
-    border-bottom: 1px solid var(--accent-color, red);
-    border-left: 1px solid var(--accent-color, red);
-  }
-}
-
 .header__theme-menu {
   justify-self: right;
 }
@@ -142,12 +130,6 @@
   padding: 0px 13px 0px 13px;
 }
 
-.theme_dark {
-  .header__theme-menu-button {
-    color: var(--accent-color, red);
-  }
-}
-
 .header__theme-menu-button:hover {
   border: 1px solid var(--hover-color);
   cursor: pointer;
@@ -157,21 +139,8 @@
   border-bottom: 1px solid var(--text-color);
 }
 
-.theme_dark {
-  .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--accent-color, red);
-  }
-}
-
 .header__theme-menu-button_active {
-
   border: 1px solid var(--text-color);
-}
-
-.theme_dark {
-  .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);
-  }
 }
 
 .header__description-title {
@@ -197,12 +166,6 @@
 @media (width >= 768px) {
   .header__description-text {
     max-width: 49%;
-  }
-}
-
-.theme_dark {
-  .header__description-text {
-    color: var(--bg-color);
   }
 }
 
@@ -354,20 +317,6 @@ h4.card-title {
   font-weight: var(--font-weight);
 }
 
-.theme_dark {
-  .content-section-title {
-    color: var(--accent-color);
-  }
-
-  .card-list-title {
-    color: var(--bg-color);
-  }
-
-  .card-title {
-    color: var(--bg-color);
-  }
-}
-
 .card-link {
   text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
@@ -461,4 +410,44 @@ h4.card-title {
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
   font-weight: var(--font-weight-bold);
+}
+
+.theme_dark {
+  .decorated-zone::after {
+    border-top: 1px solid var(--accent-color, red);
+    border-right: 1px solid var(--accent-color, red);
+  }
+
+  .decorated-zone::before {
+    border-bottom: 1px solid var(--accent-color, red);
+    border-left: 1px solid var(--accent-color, red);
+  }
+
+  .header__theme-menu-button {
+    color: var(--accent-color, red);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--accent-color, red);
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--accent-color, red);
+  }
+
+  .header__description-text {
+    color: var(--bg-color);
+  }
+
+  .content-section-title {
+    color: var(--accent-color, red);
+  }
+
+  .card-list-title {
+    color: var(--bg-color);
+  }
+
+  .card-title {
+    color: var(--bg-color);
+  }
 }

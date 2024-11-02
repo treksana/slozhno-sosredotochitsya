@@ -6,13 +6,13 @@
   --title-shadow-color: #ff0070;
 }
 
-.theme_light .header__decorative-icon{
+.theme_light .header__decorative-icon {
   visibility: hidden;
   display: none;
 }
 
-@media(prefers-color-scheme: light){
-  .header__decorative-icon{
+@media(prefers-color-scheme: light) {
+  .header__decorative-icon {
     visibility: hidden;
     display: none;
   }

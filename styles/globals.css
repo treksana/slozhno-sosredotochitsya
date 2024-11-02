@@ -39,6 +39,6 @@ a {
   line-height: inherit;
 }
 
-:focus-visible{
+:focus-visible {
   outline: none;
 }
