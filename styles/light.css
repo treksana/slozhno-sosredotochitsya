@@ -4,16 +4,19 @@
   --accent-color: #ff8dcb;
   --title-main-color: #ffc2e6;
   --title-shadow-color: #ff0070;
+  --sections-title-color: rgb(53, 52, 48);
+  --nav-list-color: rgb(53, 52, 48);
+  --decor-corners-color: rgb(53, 52, 48);
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 .theme_light .header__decorative-icon {
   visibility: hidden;
-  display: none;
 }
 
 @media(prefers-color-scheme: light) {
   .header__decorative-icon {
     visibility: hidden;
-    display: none;
   }
 }

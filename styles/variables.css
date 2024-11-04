@@ -1,8 +1,3 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
   --main-font: "IBM Plex mono";
   --font-size: 18px;
@@ -12,7 +7,11 @@
   --line-height-title: 82.5%;
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
-  --text-color: #353430;
+  --text-color: rgb(53, 52, 48);
+  --sections-title-color: rgb(53, 52, 48);
+  --card-title-color: rgb(53, 52, 48);
+  --decor-corners-color: rgb(53, 52, 48);
+  --nav-list-color: rgb(53, 52, 48);
   --accent-color: rgb(255, 141, 203);
   --title-main-color: #ffc2e6;
   --title-shadow-color: #ff0070;
