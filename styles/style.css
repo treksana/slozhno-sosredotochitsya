@@ -42,7 +42,7 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  box-shadow: 
+  box-shadow:
     0 0 4px rgba(255, 0, 0, 0.8),
     0 0 10px rgba(255, 0, 0, 0.6),
     0 0 20px rgba(255, 0, 0, 0.4);
@@ -99,6 +99,7 @@
     margin-bottom: 20px;
     margin-left: 20px;
   }
+
   .decorated-zone::after {
     margin-top: 20px;
     margin-right: 20px;
@@ -121,6 +122,7 @@
     justify-self: center;
     align-self: start;
   }
+
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
@@ -198,22 +200,19 @@
 
 .content-section {
   margin-bottom: 50px;
-  
-}
-
-.content-section:last-child {
-  margin-bottom: 0px;
+  display: grid;
+  gap: 20px; 
 }
 
 @media (width >= 768px) {
   .content-section {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 }
 
 .content-section-title {
   font-size: var(--font-size);
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: var(--sections-title-color);
   font-weight: var(--font-weight-bold);
 }
@@ -239,16 +238,29 @@
   margin-bottom: 20px;
 }
 
+.card-list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.card-list-item-what {
+  margin-bottom: 20px;
+}
+
+@media (width >= 1024px) {
+  .card-list-item-what {
+    margin-bottom: 0px;
+  }
+}
+
 article p:not(:last-child) {
   margin-bottom: 10px;
 }
 
 @media (width < 1024px) and (width >= 768px) {
   .content-section-why {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
+
   .content-section-title-why {
     grid-column: span 1;
     margin-bottom: 0px;
@@ -259,11 +271,10 @@ article p:not(:last-child) {
   }
 
   .content-section-what {
-    display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
-    gap: 20px;
   }
+
   .content-section-title-what {
     grid-column: 1;
     grid-row: 1;
@@ -276,18 +287,17 @@ article p:not(:last-child) {
   }
 
   .content-section-how {
-    display: grid;
     grid-template-columns: minmax(236px,1fr) 2fr;
-    gap: 20px;
   }
+
   .content-section-title-how {
     grid-column: 1;
     margin-bottom: 0;
   }
-
+ 
   .card-list-title {
     grid-column: 2 / 3;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
   }
 
   .card-list-how {
@@ -297,9 +307,7 @@ article p:not(:last-child) {
 
 @media (width >= 1024px) {
   .content-section-why {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   .content-section-title-why {
@@ -312,9 +320,7 @@ article p:not(:last-child) {
   }
 
   .content-section-what {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
 
   .content-section-title-what {
@@ -332,10 +338,7 @@ article p:not(:last-child) {
   }
 
   .content-section-how {
-    display: grid;
     grid-template-columns: minmax(315px, 1fr) 2fr;
-    gap: 20px;
-
   }
 
   .content-section-title-how {
@@ -361,6 +364,7 @@ h4.card-title {
   text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
 }
+
 .card-link:hover {
   border-bottom: 1px solid var(--text-color);
 }
@@ -431,7 +435,7 @@ h4.card-title {
     grid-column: span 2;
     grid-row: span 1;
   }
-}
+} 
 
 @media (width > 768px) {
   .content-section-pictures {
